@@ -1,19 +1,20 @@
 #primary {
-  padding-block: 20px;
+  padding-block: 1rem;
+  display: flex;
 
-  div {
+  & div {
     display: flex;
     align-items: center;
     gap: 8px;
+
+    & strong {
+      display: none;
+    }
   }
 
-  /* nesting css */
-  div:nth-child(2) {
+  & > img {
     margin-inline: auto;
-  }
-
-  div:nth-child(3) {
-    justify-self: end;
+    width: clamp(6.25rem, 4.7826rem + 6.5217vw, 10rem);
   }
 }
 
@@ -21,5 +22,30 @@
   padding-block: 14px;
   border: solid 1px var(--stroke-color);
   border-inline: none;
+  display: flex;
   justify-content: space-between;
+  gap: var(--gap-2);
+
+  overflow: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+
+@media (width >= 48rem) {
+  #primary {
+    padding-block: 1.25rem;
+
+    & div strong {
+      display: initial;
+    }
+  }
+}
+
+
+@media (width >= 80rem) {
+  #primary {
+    & div strong {
+      display: initial;
+    }
+  }
 }
