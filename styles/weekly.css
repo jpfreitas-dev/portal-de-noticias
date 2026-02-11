@@ -1,5 +1,6 @@
 #weekly {
   margin-bottom: 2rem;
+  
   & div {
     display: grid;
     gap: var(--gap-1);

@@ -22,35 +22,14 @@ section header {
   }
 }
 
-#ai {
+@media (width >= 48rem){
 
-  img {
-    width: 176px;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-  }
-
-  h3 {
-    margin-block: 8px 4px;
-  }
 }
 
-
-
-#more {
-  margin-top: 32px;
-
-  h3 {
-    margin-top: 8px;
-  }
-
-  #title {
-    margin-top: 0;
-  }
-
-  img {
-    width: 72px;
-    aspect-ratio: 1/1;
-    object-fit: cover;
+@media (width >= 80rem) {
+  main > div {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--gap-2);
   }
 }
