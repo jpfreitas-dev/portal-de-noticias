@@ -1,6 +1,7 @@
 #featured {
   display: grid;
   gap: var(--gap-1);
+  margin-bottom: 2rem;
 
   & div {
     display: grid;
@@ -55,6 +56,7 @@
 @media (width >=48rem) {
   #featured {
     grid-template-rows: 1fr 1fr;
+    margin-bottom: 3rem;
 
     & div {
       display: grid;
@@ -67,6 +69,7 @@
   #featured {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    margin-bottom: 3rem;
 
     & div {
       display: grid;
