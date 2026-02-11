@@ -44,9 +44,9 @@
       </nav>
     </header>
 
-    <main class="grid container">
-      <section id="featured" class="grid grid-flow-col gap-16">
-        <figure class="card">
+    <main class="container">
+      <section id="featured" style="grid-area: featured;">
+        <figure class="card main-featured">
           <img
             src="assets/images/Image 01.png"
             alt="Robôs domésticos começam a ser adotados para tarefas diárias, prometendo mais conforto e eficiência nas residências."
@@ -54,13 +54,16 @@
 
           <figcaption>
             <span class="content-tag">robótica</span>
-            <h2 class="text-2xl">
+            <h1 class="desktop-only">
               Robôs domésticos começam a ser adotados para tarefas diárias,
               prometendo mais conforto e eficiência nas residências.
-            </h2>
+            </h1>
+            <h1 class="mobile-only">
+              Robôs domésticos começam a ser adotados para tarefas...
+            </h1>
           </figcaption>
         </figure>
-        <div class="grid grid-cols-2 gap-16">
+        <div>
           <figure class="card">
             <img
               src="assets/images/Image 02.png"
@@ -69,10 +72,10 @@
 
             <figcaption>
               <span class="content-tag">hologramas</span>
-              <h2 class="text-lg">
+              <h3 class="text-lg">
                 Novo Smartphone Projetor 3D chega ao mercado, transformando a
                 forma como vemos nossas telas!
-              </h2>
+              </h3>
             </figcaption>
           </figure>
           <figure class="card">
@@ -83,10 +86,10 @@
 
             <figcaption>
               <span class="content-tag">Internet</span>
-              <h2 class="text-lg">
+              <h3 class="text-lg">
                 Tecnologia 6G chega às metrópoles brasileiras, prometendo
                 revolucionar a forma como vivemos e nos comuni...
-              </h2>
+              </h3>
             </figcaption>
           </figure>
           <figure class="card">
@@ -97,10 +100,10 @@
 
             <figcaption>
               <span class="content-tag">Vestíveis</span>
-              <h2 class="text-lg">
+              <h3 class="text-lg">
                 Empresa lança relógio inteligente capaz de monitorar a saúde
                 mental, oferecendo insights valiosos para o...
-              </h2>
+              </h3>
             </figcaption>
           </figure>
           <figure class="card">
@@ -111,16 +114,16 @@
 
             <figcaption>
               <span class="content-tag">Realidade Virtual</span>
-              <h2 class="text-lg">
+              <h3 class="text-lg">
                 Escolas adotam a tecnologia VR para proporcionar experiências
                 imersivas, transformando a aprendizagem tradicional.
-              </h2>
+              </h3>
             </figcaption>
           </figure>
         </div>
       </section>
 
-      <section id="weekly">
+      <section id="weekly" style="grid-area: weekly;">
         <header class="grid grid-flow-col">
           <h3>Mais lidas da semana</h3>
           <a href="#" class="grid grid-flow-col">
@@ -153,7 +156,7 @@
         </div>
       </section>
 
-      <section id="ai">
+      <section id="ai" style="grid-area: ai;">
         <header class="grid grid-flow-col">
           <h3>Destaques da Inteligência Artificial</h3>
           <a href="#" class="grid grid-flow-col">
@@ -225,7 +228,7 @@
         </div>
       </section>
 
-      <aside>
+      <aside style="grid-area: aside;">
         <div id="ads">
           <img src="assets/Ads.png" alt="">
         </div>
