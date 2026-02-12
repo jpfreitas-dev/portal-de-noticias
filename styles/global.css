@@ -20,8 +20,9 @@
   --text-p: 400 .875rem/160% var(--font-family);
   --text: 400 1rem/140% var(--font-family);
 
-  --py-1: 1rem;
-  --py-2: 2rem;
+  --px-1: 1rem;
+  --px-2: 2rem;
+  --padding-inline: var(--px-1);
   --gap-1: 1rem;
   --gap-2: 2rem;
 
@@ -53,7 +54,7 @@ h3 {
 .container {
   max-width: 1280px;
   margin-inline: auto;
-  padding-inline: var(--py-1);
+  padding-inline: var(--padding-inline);
 }
 
 main {
@@ -78,7 +79,7 @@ main {
 
 @media (width >=48rem) {
   .container {
-    padding-inline: var(--py-2);
+    padding-inline: var(--padding-inline);
   }
 }
 
@@ -89,7 +90,7 @@ main {
   }
 
   .container {
-    padding-inline: var(--py-2);
+    padding-inline: var(--padding-inline);
   }
 
   .desktop-only {

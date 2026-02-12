@@ -1,7 +1,6 @@
 aside {
   display: flex;
   flex-direction: column;
-  /* height: 100%; */
   gap: var(--gap-2);
 }
 
@@ -21,7 +20,7 @@ aside {
     & article {
       display: grid;
       gap: var(--gap-1);
-      grid-template-columns: 1fr auto;
+      grid-template-columns: 72px auto;
 
       & h3 {
         margin-top: .5rem;
@@ -47,13 +46,20 @@ aside {
   }
 }
 
+@media (width >= 48rem) {
+  #more > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30%);
+  }
+}
+
 /* Desktop: Ativa o espaçamento dinâmico */
 @media (width >= 80rem) {
   #more > div {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Distribui as notícias de cima a baixo */
+    justify-content: space-between;
     flex: 1;
-    gap: 0; /* Deixa o espaço ser controlado pelo justify-content */
+    gap: 0; 
   }
 }
