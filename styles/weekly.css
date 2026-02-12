@@ -1,6 +1,6 @@
 #weekly {
   margin-bottom: 2rem;
-  
+
   & div {
     display: grid;
     gap: var(--gap-1);
@@ -30,6 +30,7 @@
 @media (width >=48rem) {
   #weekly {
     margin-bottom: 2rem;
+
     & div {
       grid-template-columns: repeat(2, 1fr);
     }

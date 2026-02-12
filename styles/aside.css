@@ -13,7 +13,7 @@ aside {
   display: flex;
   flex-direction: column;
 
-  & > div {
+  &>div {
     display: grid;
     gap: var(--gap-1);
 
@@ -46,20 +46,19 @@ aside {
   }
 }
 
-@media (width >= 48rem) {
-  #more > div {
+@media (width >=48rem) {
+  #more>div {
     display: grid;
     grid-template-columns: repeat(auto-fit, 30%);
   }
 }
 
-/* Desktop: Ativa o espaçamento dinâmico */
-@media (width >= 80rem) {
-  #more > div {
+@media (width >=80rem) {
+  #more>div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex: 1;
-    gap: 0; 
+    gap: 0;
   }
 }
